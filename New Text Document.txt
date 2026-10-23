@@ -1,0 +1,526 @@
+AXO Longevity: What should they build next?
+The key is not to build another AI health coach, biomarker dashboard, biological-age calculator, or personalized supplement recommendation engine. Those overlap with AXO's existing product.
+
+The opportunity is to identify a missing capability in the system AXO already has—something that improves its core business, can be demonstrated with a working prototype, and would be valuable enough for the team to consider adopting.
+
+I'll assess this in three layers:
+1. What AXO already has and what it has publicly indicated it is developing.
+2. Where the remaining product gap is, rather than assuming an existing feature is missing.
+3. The specific new product or feature worth building, with a rationale for why AXO might want it.
+One important distinction: a feature missing from the public website is not necessarily missing from the internal product. I'll distinguish public evidence from hypotheses about its internal roadmap.
+1. What AXO has already built
+
+
+
+
+
+
+
+
+
+A. Biomarker intelligence and health scoring
+
+AXO already analyses 100+ biomarkers across 36+ health areas, calculates its Longevity Score and Biological Age, and compares results with optimal ranges. It also ranks personalized recommendations. 
+
+Axo Longevity
++1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+B. AI health copilot and personalized protocols
+
+The AI copilot is an existing product, not an unbuilt idea. It is intended to combine laboratory results, wearable data and medical records to provide tailored guidance. 
+
+axolongevity.com
++1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C. Longitudinal tracking and retesting
+
+The membership already promises progress tracking, wearable data, personalized action plans and repeat testing at approximately six-month intervals. 
+
+axolongevity.com
++1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+D. Laboratory network and commercial expansion
+
+AXO has announced operations across six markets, more than 1,400 laboratory locations and a waitlist exceeding 19,000. Its September 25, 2026 funding announcement says its $5 million seed round will support laboratory expansion, AI copilot development and deeper wearable integrations. 
+
+axolongevity.com
++1
+
+
+
+
+
+
+The most revealing evidence: the founders' own words
+In an earlier product-development post, co-founder Sergio Tang-Sanchez described the initial product as a strong but static baseline and outlined the move toward guidance over the next six months, incorporating wearables, training load, sleep, nutrition and family history. 
+
+Andrew McCarthy
+
+
+
+
+More recently, the company has reiterated that its next phase involves developing its AI health coach and wearable integrations. 
+
+LinkedIn
++1
+
+
+
+
+This tells us something important: AXO's strategic direction is already clear. The opportunity is to build a missing layer within that direction, not invent a competing direction.
+2. What the latest LinkedIn posts reveal
+I reviewed the company's public LinkedIn updates and the founders' product and funding announcements.
+Product direction
+From isolated biomarkers to connected health intelligence
+
+AXO's recent posts emphasize interpreting biomarkers in relation to one another, rather than treating every result independently. Its Lp(a) example specifically discusses contextualizing cardiovascular risk alongside ApoB, cholesterol, blood pressure and glucose control. 
+
+LinkedIn
+
+
+
+
+
+Distribution
+Partnership-led growth and new customer segments
+
+The company is promoting its service through athlete events such as IRONMAN 70.3 Málaga, as well as partnerships with women's health and longevity practitioners. This suggests that protocols must work across different user goals and contexts. 
+
+LinkedIn
+
+
+
+
+
+Hiring signal
+AI automation and independent execution
+
+AXO has advertised a remote AI & Automation Intern role covering AI agents, automated workflows, internal-process improvements, prototypes and business impact. It explicitly values independently built projects and people who can identify problems without detailed instructions. The listing specifies European working hours, so eligibility for someone based in India should be confirmed. 
+
+Wellfound
++1
+
+
+
+
+
+The hiring signal is particularly useful for choosing the format of a project: a working prototype with a measurable business or product outcome is better aligned than a static Figma concept or a generic chatbot.
+
+3. The product I would build for AXO
+AXO Intervention Intelligence Engine
+A closed-loop system that evaluates whether a member's health protocol is being followed, what is changing, and what the evidence supports doing next.
+
+My strongest recommendation is to build the layer between AXO's existing personalized action plan and its next round of biomarker results.
+
+The important distinction is that AXO already tracks progress. I would not build another progress tracker. I would build a system that makes that progress interpretable and actionable.
+Existing AXO health blueprint
+
+Biomarkers, ranked recommendations, goals and wearable signals
+
+
+Proposed new layer
+Intervention Intelligence Engine
+
+Protocol tracking · Adherence · Confounders · Evidence evaluation · Next-step decisions
+
+
+A more informative next action
+
+Continue, review, adjust or escalate for clinical review—with reasons and uncertainty made explicit
+
+
+This is a proposed architecture, not a claim that AXO lacks all of these capabilities internally.
+Why this is the gap worth investigating
+AXO's current product already promises the sequence Measure → Decode → Act → Repeat. Its website describes a follow-up blood panel at the six-month mark to evaluate progress. 
+
+axolongevity.com
++1
+
+
+
+
+That leaves a valuable product question:
+
+Between the initial recommendation and the next blood test, how does AXO establish which parts of a protocol were followed, which changes occurred, and what can reasonably be concluded about the response?
+
+Wearable integrations alone do not answer this question. Nor does a chatbot that can explain the latest blood result.
+
+The engine would connect these pieces into an auditable decision process. I found no public evidence that AXO currently exposes this complete intervention-evaluation workflow, but its internal implementation is not publicly verifiable.
+4. What exactly would you build?
+
+
+
+
+
+
+
+
+
+Feature 1 — Protocol-to-outcome timeline
+
+Convert each approved recommendation into a structured protocol with a start date, intended outcome, adherence signals, relevant biomarkers and a review date.
+
+Example: a clinician-approved sleep intervention is tracked against sleep duration, regularity and relevant recovery measures, rather than being represented only as a checklist.
+
+
+
+
+
+
+
+
+
+
+
+
+Feature 2 — Change and confounder analysis
+
+Detect meaningful changes in available data and annotate potential confounders such as illness, travel, training load or missing measurements.
+
+The engine should distinguish an observed change from a possible explanation. It must not claim that a supplement or lifestyle intervention caused a biomarker change simply because the two occurred together.
+
+
+
+
+
+
+
+
+
+
+
+
+Feature 3 — Evidence-backed next-step recommendations
+
+For each protocol, show what was expected, what was observed, how complete the evidence is and what remains uncertain.
+
+Produce a structured outcome: continue as prescribed, request more data, discuss an adjustment with a clinician, or arrange clinical review when appropriate.
+
+
+
+
+
+
+
+
+
+
+
+
+Feature 4 — Six-month review report
+
+Automatically prepare a clinician-reviewable summary of baseline versus follow-up biomarkers, wearable trends, adherence and missing data, along with a clear explanation of what improved, worsened or remains inconclusive.
+
+This directly complements AXO's existing repeat-testing model without replacing its clinical team.
+
+
+
+5. Why this is more valuable than another AI health coach
+AXO already has an AI copilot. Building a more conversational version would duplicate the product category it is actively developing. 
+
+axolongevity.com
++1
+
+
+
+Alternative project	Why I would rank it lower
+Another AI health chatbot	Direct overlap with the existing copilot
+A new biological-age calculator	Direct overlap with existing health scoring
+A wearable dashboard	AXO already plans to deepen wearable integrations
+A generic habit tracker	Easy to reproduce and not specific to AXO's clinical workflow
+A supplement recommender	Overlaps with personalized interventions and risks unsupported recommendations
+Intervention Intelligence Engine	Builds on the existing product and adds a testable evaluation workflow
+The last option has a more defensible purpose because it combines longitudinal data, protocol-specific evaluation, evidence provenance and clinically cautious decision support.
+
+That does not mean it is impossible for a general-purpose AI model to reproduce parts of it. The value lies in the structured data model, deterministic evaluation rules, longitudinal history, reliable workflow and integration into AXO's actual product—not in the use of AI alone.
+6. How I would make the prototype compelling
+You do not need access to AXO's private database to demonstrate the concept. Build a synthetic-data prototype with clearly labelled fictional members and results.
+Prototype acceptance criteria
+Prototype checklist
+0/6
+
+
+
+[ ] Import a fictional member's baseline biomarkers and health blueprint.
+[ ] Load daily wearable measurements and protocol-adherence records.
+[ ] Visualize the intervention timeline and annotate missing data or confounders.
+[ ] Compare baseline and follow-up measurements with reference ranges and measurement dates.
+[ ] Generate a structured evidence report with source data, uncertainty and explicit limitations.
+[ ] Produce a proposed next-step decision with deterministic rules and clinician-review safeguards.
+
+Suggested implementation
+- Backend: Python and FastAPI.
+- Data and evaluation: Pandas, Pydantic and deterministic rule-based calculations.
+- Storage: PostgreSQL or SQLite for the demo.
+- Frontend: React or TypeScript.
+- AI component: Use an LLM to explain the evidence and produce readable reports, but not to invent biomarker interpretations or make unsupported clinical decisions.
+- Testing: Synthetic data, unit tests, missing-data cases and explicit checks against misleading causal conclusions.
+A particularly strong demonstration would include two fictional members with the same initial recommendation but different adherence patterns and outcomes. The engine should generate different evidence summaries without automatically declaring either intervention successful or unsuccessful based on insufficient data.
+7. Would AXO actually want this product?
+My assessment:
+Strong strategic fit
+
+AXO's public messaging emphasizes actionable intelligence, personalized protocols, wearable data and progress over time. This proposal builds on all four.
+
+
+Good demonstration potential
+
+You can show the workflow end to end using synthetic data, without needing access to medical records or the company's production systems.
+
+
+Unverified internal gap
+
+AXO may already have some or all of this logic in its internal systems. Its public materials describe tracking and adaptive guidance, so the project should be positioned as a concrete implementation proposal rather than a claim that its product is deficient.
+
+
+
+There is also a direct hiring angle. AXO's publicly listed AI & Automation Intern position asks for independently built projects, prototypes, business impact and autonomous execution. 
+
+Wellfound
+
+
+ A functioning prototype could therefore serve both as a product proposal and as evidence of your engineering ability.
+My final verdict
+Build the AXO Intervention Intelligence Engine, specifically the layer that evaluates a personalized health protocol between testing cycles.
+
+Do not spend your time recreating its dashboard, adding another chatbot, or building a generic wearable tracker. Make the demo show exactly how raw longitudinal data becomes an evidence-backed, auditable next-step recommendation.
+
+The first thing I would send AXO is a short product proposal with a working demo and one explicit question: Does your current copilot already evaluate intervention adherence and outcomes at this level, or would this be a useful missing layer?
+
+That question matters more than assuming the feature is absent. If they confirm the gap, you will have a concrete product to discuss with the team; if they already have it, their answer will help you target a genuinely missing capability instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WHAT WOULD BE TECH ARCHITECTURE, KEEP IN MIND I DONT WANT TO WRITE DETERMINISTIC RULES ONLY TYPE OF SHIT , I WANNA USE AI
+REMEMBER TO NOT OVERCOMPLICATE IT , I STILL HAVE TO MAKE THIS ARCHITECTURE WWITH NO DOMAIN KNOWLEDGE
+
+
+
+
+
+
+
+
+
+
+
+
+Worked for 18s
+
+
+
+
+
+
+
+AXO Adaptive Loop — Simple AI-First Architecture
+My recommendation is to build Adaptive Loop: an AI system that studies what happens after a person starts a health intervention and proposes what to investigate next.
+
+The important part: AI does the reasoning. Python handles data preparation, calculations and verification. You do not need to write hundreds of healthcare rules or train your own model.
+
+Since you don't have healthcare-domain knowledge, build this as a research and decision-support prototype using synthetic data—not as a system that diagnoses people or independently changes their treatment.
+1. The architecture
+1. Synthetic Health Data
+
+Biomarker results · Wearable time series · Intervention history · Context notes
+
+2. Python Data Preparation
+
+Pandas cleans and aligns dates, handles missing values and computes basic trends
+
+3. AI Reasoning Engine
+Core product
+LLM synthesizes trends, adherence, context and competing explanations
+
+Produces hypotheses · Confidence with justification · Missing evidence · Proposed next investigation
+
+4. Evidence Verification
+
+Check claims against source data, verify calculations, flag unsupported conclusions and allow abstention
+
+5. Adaptive Loop Dashboard
+
+What changed? What might explain it? What remains unknown? What should be reviewed next?
+
+
+This is a single application, not a collection of microservices. You can build the entire prototype with Python, FastAPI, an LLM API, and a React frontend.
+2. What each component actually does
+
+Component A — Data simulator
+
+Generate fictional people, biomarker measurements, wearable trends, intervention start dates and adherence records.
+
+You control the synthetic scenarios, so you can test whether the AI notices a known change, missing data or a misleading correlation.
+
+
+
+
+Component B — Data preparation
+
+Use Pandas to organize observations by date and intervention. Calculate simple summaries such as weekly averages, baseline-versus-follow-up differences and data completeness.
+
+This is ordinary data engineering, not a healthcare rule engine. The LLM should receive readable summaries rather than thousands of unprocessed measurements.
+
+
+
+
+Component C — AI analyst
+
+Send the prepared evidence to an LLM, such as a model accessible through Groq.
+
+Ask it to compare trends, generate competing explanations, identify confounders, explain uncertainty and propose the most useful next investigation. Require structured JSON output using Pydantic schemas.
+
+This is where the product's intelligence lives. You define the reasoning task and output format, not every possible conclusion.
+
+
+
+
+Component D — AI critic and evidence checker
+
+A second LLM call reviews the first answer. It checks whether the cited measurements support each claim, whether alternative explanations were considered and whether the conclusion is too strong.
+
+Python separately checks that cited observation IDs exist and numerical calculations match the source data. The critic can reject a conclusion or request abstention.
+
+
+
+
+Component E — Dashboard
+
+Display the original measurements, the AI's hypotheses, evidence supporting each hypothesis, counterarguments, missing data and suggested next steps.
+
+Users should be able to inspect the evidence behind a conclusion instead of trusting a chat response blindly.
+
+
+
+3. How the AI reasoning should work
+Don't build a multi-agent swarm. Start with two LLM calls per analysis: one analyst and one critic.
+INPUT EXAMPLE — FICTIONAL DATA
+
+A person's sleep duration improved from a weekly average of 6.1 hours to 7.0 hours after a new sleep routine. Their wearable recovery score also increased, but their exercise load decreased during the same period.
+
+
+LLM CALL 1 — ANALYST
+
+The model might identify improved sleep and recovery as observed changes, with reduced exercise load as a competing explanation. It should not automatically attribute the recovery change to the sleep routine.
+
+
+LLM CALL 2 — CRITIC
+
+The critic checks the original measurements and challenges unsupported claims. If the data cannot distinguish between explanations, it should say so.
+
+
+OUTPUT — ADAPTIVE LOOP
+- Observed: Both sleep duration and recovery score increased.
+- Possible explanation: Better sleep may have contributed.
+- Alternative: Lower exercise load may also explain the change.
+- Unknown: The relative contribution of each factor.
+- Next investigation: Review additional comparable weeks and contextual data before drawing a stronger conclusion.
+
+
+The output above illustrates the intended behavior, not a claim about a real patient.
+
+One important technical point: the model's self-reported confidence is not a calibrated probability. Initially, ask it to provide a qualitative confidence level with a justification and explicit evidence gaps. You can evaluate its reliability against your synthetic test cases later.
+4. The exact tech stack I would use
+Use tools you can build with now. Don't introduce extra infrastructure just to make the architecture look sophisticated.
+Layer	Technology	Purpose
+Frontend	Next.js + TypeScript + Tailwind	Dashboard and evidence views
+API	Python + FastAPI	Receives data and runs analyses
+Data validation	Pydantic	Validates inputs and AI output structure
+Data processing	Pandas + NumPy	Summaries, trends and missing-data handling
+AI reasoning	Groq API + structured outputs	Hypothesis generation and evidence synthesis
+Database	Supabase PostgreSQL + SQLAlchemy	Stores synthetic profiles, observations and analysis history
+Testing	pytest	Tests calculations, evidence references and failure cases
+Deployment	Vercel + Render	Frontend and backend hosting
+This matches your existing Python/FastAPI/React/TypeScript skills and keeps the prototype free of microservices, Kubernetes, message queues and custom model training. 
+5. Keep the backend this simple
+FastAPI project structure
+adaptive-loop/
+├── frontend/
+│   └── Next.js dashboard
+├── backend/
+│   ├── main.py              # API endpoints
+│   ├── schemas.py           # Pydantic models
+│   ├── data_loader.py       # Load synthetic data
+│   ├── data_processor.py    # Pandas summaries
+│   ├── ai_analyst.py        # Main LLM call
+│   ├── ai_critic.py         # Review LLM output
+│   ├── evidence_checker.py  # Validate claims
+│   ├── database.py          # SQLAlchemy
+│   └── tests/
+└── README.md
+
+
+The main endpoint can be as simple as POST /analyses. It loads a fictional member's data, prepares summaries, invokes the analyst and critic, checks evidence references, saves the result and returns it to the dashboard.
+6. What not to build yet
+- No fine-tuning or training your own ML model.
+- No LangGraph or complex multi-agent orchestration.
+- No wearable APIs or real patient records.
+- No medical knowledge graph or vector database.
+- No automated treatment changes or diagnostic claims.
+- No hundreds of hand-written clinical rules.
+You need ordinary data validation and arithmetic checks, but you do not need to encode the clinical reasoning yourself.
+7. Build it in this order
+1. Create the synthetic dataset. Include baseline measurements, daily wearable trends, intervention dates, adherence and contextual events.
+2. Build the Pandas processor. Return clean, dated summaries with links to the original observations.
+3. Build the AI analyst. Have it produce hypotheses, supporting evidence, alternatives, unknowns and proposed investigations in a fixed JSON schema.
+4. Add the critic. Test whether it catches fabricated evidence references, unsupported causality and missing context.
+5. Build the dashboard. Let a user inspect the timeline and expand each hypothesis to see its evidence and counterarguments.
+6. Test failure cases. Give the system incomplete, contradictory and misleading synthetic data. A good system must sometimes say that the evidence is insufficient.
+My final recommendation: start with one FastAPI backend, one LLM analyst, one LLM critic and one dashboard. Make the AI reasoning demonstrably useful and falsifiable before adding any additional components.
+
+Your strongest differentiator is not that you used an LLM. It is that Adaptive Loop can explain what changed, explore plausible explanations, show precisely which evidence supports each claim, and recognize when it cannot determine the answer.
